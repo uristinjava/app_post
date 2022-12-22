@@ -9,7 +9,7 @@ const PostForm = ({ create }) => {
     const [post, setPost] = useState({ title: '', body: '' });
 
     const addNewPost = (e) => {
-        e.preventDefault();
+        e.preventDefault(); //отмена перезагрузки страницы
         const newPost = {
             ...post, id: Date.now()
         }
